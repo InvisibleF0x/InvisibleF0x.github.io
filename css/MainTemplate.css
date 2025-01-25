@@ -1,0 +1,44 @@
+body{
+	background-image: url('../images/BackgroundImage.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; 
+	color: white;
+	
+	font-size: 20px;
+}
+
+p{
+	
+}
+
+H1{
+	text-align: center;
+}
+
+
+.MainPanels{
+	background-color: rgba(10, 32, 35, 0.77);
+	width: 50%;
+	margin-bottom: 50px;
+	margin-top: 10px;
+	padding: 2%;
+	margin-left: auto;
+    margin-right: auto;
+	border-radius: 15px;
+}
+
+#Main-Content{
+	padding-bottom: 30px;
+}
+
+#Footer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  
+  /* This part allows for centring, as margin:auto does not work for position: fixed*/
+  left: 50%;
+  transform: translateX(-50%);
+}
