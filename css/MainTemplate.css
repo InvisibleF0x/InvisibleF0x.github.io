@@ -72,6 +72,23 @@ H1{
 	border-radius: 8px;
 }
 
+.nav-selected {
+	 animation: pulse 5s infinite; /* Dodajemy animację */
+ }
+ 
+ @keyframes pulse {
+	 0% {
+		 transform: scale(1);
+	 }
+	 50% {
+		 transform: scale(1.05); /* Delikatne powiększenie */
+		  /* Można też zmieniać box-shadow, kolor tła itp. */
+	 }
+	 100% {
+		 transform: scale(1);
+	 }
+ }
+
 #nav-main{
 	border: 3px solid rgb(0, 195, 195);
 	border-radius: 8px;
