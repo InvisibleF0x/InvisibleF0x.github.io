@@ -7,16 +7,14 @@ body{
 	color: white;
 	
 	font-size: 20px;
-}
-
-p{
-	
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
 }
 
 H1{
 	text-align: center;
 }
-
 
 .MainPanels{
 	background-color: rgba(10, 32, 35, 0.77);
@@ -34,11 +32,102 @@ H1{
 }
 
 #Footer {
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 0;
-  
-  /* This part allows for centring, as margin:auto does not work for position: fixed*/
-  left: 50%;
-  transform: translateX(-50%);
+	/*for now nothing here*/
+	margin-bottom: 0;
+}
+
+/* Segment for the navigation */
+#Menu{
+	padding: 0;
+	width: 52%;
+	transform: skew(30deg, 0deg);
+	border-radius: 5px;
+	margin: 20px auto;
+
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.nav-child{
+	/* remove gap from width of element */
+	width: calc(20% - 10px);
+	min-width: 100px;
+	padding: 10px 2% 10px;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	background-color: antiquewhite;
+}
+
+.nav-child a{
+	transform: skew(-30deg, 0deg);
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+	border-radius: 8px;
+}
+
+#nav-main{
+	border: 3px solid rgb(0, 195, 195);
+	border-radius: 8px;
+	background-color: black;
+	box-shadow: 0 0 8px 2px rgba(0, 255, 255, 0.7),
+               inset 0 0 40px rgb(0, 195, 195);
+}
+
+#nav-main a{
+	color: rgb(0, 255, 255);
+}
+
+#nav-music{
+	border: 3px solid rgb(218, 22, 0);
+	border-radius: 8px;
+	background-color: black;
+	box-shadow: 0 0 8px 2px rgba(255, 0, 0, 0.67),
+               inset 0 0 40px rgb(195, 0, 0);
+}
+
+#nav-music a{
+	color: rgba(255, 25, 0);
+}
+
+#nav-blog{
+	border: 3px solid rgb(218, 196, 0);
+	border-radius: 8px;
+	background-color: black;
+	box-shadow: 0 0 8px 2px rgba(255, 242, 0, 0.67),
+               inset 0 0 40px rgb(195, 189, 0);
+}
+
+#nav-blog a{
+	color: rgb(218, 196, 0);
+}
+
+#nav-cooking{
+	border: 3px solid rgb(218, 105, 0);
+	border-radius: 8px;
+	background-color: black;
+	box-shadow: 0 0 8px 2px rgba(255, 140, 0, 0.67),
+               inset 0 0 40px rgb(195, 117, 0);
+}
+
+#nav-cooking a{
+	color: rgb(218, 105, 0);
+}
+
+#nav-coding{
+	border: 3px solid rgb(22, 218, 0);
+	border-radius: 8px;
+	background-color: black;
+	box-shadow: 0 0 8px 2px rgba(47, 255, 0, 0.67),
+               inset 0 0 40px rgb(55, 195, 0);
+}
+
+#nav-coding a{
+	color: rgb(22, 218, 0);
 }
